@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/", // JS로 컴파일된 파일이 저장될 경로
+    "sourceMap": true, //
+    "noImplicitAny": true, // any 타입을 사용하지 않도록 강제(any일 경우, Error 발생)
+    "module": "es6",
+    "target": "es5", // JS로 컴파일될 때, 어떤 버전으로 컴파일할지
+    "allowJs": true
+  }
+}
