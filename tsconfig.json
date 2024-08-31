@@ -1,10 +1,17 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/", // JS로 컴파일된 파일이 저장될 경로
+    "target": "ES5", // JS로 컴파일될 때, 어떤 버전으로 컴파일할지
+    "module": "ES6",
+    "strict": true, // 엄격한 타입 검사
+    "esModuleInterop": true, // ES6 모듈 시스템을 CommonJS 모듈 시스템으로 변환
+    "skipLibCheck": true, // 사용하지 않는 라이브러리 체크
+    "forceConsistentCasingInFileNames": true, // 파일명의 대소문자를 일관되게 사용
+    "outDir": "./dist", // JS로 컴파일된 파일이 저장될 경로
+    "rootDir": "./src", // TS 파일이 저장된 경로
     "sourceMap": true, //
     "noImplicitAny": true, // any 타입을 사용하지 않도록 강제(any일 경우, Error 발생)
-    "module": "es6",
-    "target": "es5", // JS로 컴파일될 때, 어떤 버전으로 컴파일할지
     "allowJs": true
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
